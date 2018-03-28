@@ -1,0 +1,134 @@
+/* Exercice 05 */
+body
+{
+	margin: 0;
+	font-family: verdana, sans-serif ;
+	font-size: 12pt;
+	background-image: url(images/background.jpg);
+	/*background-color: #717171;*/
+}
+
+#wrapper
+{
+	width: 674px;
+	height: 820px;
+	position: absolute;
+	background-color: #fff;
+	left: 50%;
+	margin-left: -337px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+#header
+{
+	height: 102px;
+	background-image: url(images/header.jpg);
+}
+
+#menu1
+{
+	height: 40px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.28) 100%);
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.28) 100%);
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.28) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#47000000',GradientType=0 );
+}
+
+#menu_sup
+{
+	margin: 0;
+	padding-left: 5px;
+}
+
+#menu_sup li
+{
+	height: 25px;
+	display: inline-block;
+	padding: 7px 10px;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #b8b8b8;
+	float: left;
+}
+
+#menu_sup li:first-child
+{
+	border-left: none;
+}
+
+#menu_sup li:last-child
+{
+	border-right: none;
+}
+
+#menu_sup li a
+{
+	font-size: 0.7em;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: bold;
+	color: #6e6e6e;
+}
+
+#menu_sup li a:hover
+{
+	color: #025d89;
+}
+
+#slider
+{
+	height: 186px;
+	background-image: url(images/slider.jpg);
+}
+
+#slider h5
+{
+	margin: 0;
+	padding-left: 25px;
+	padding-top: 45px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	
+}
+
+#slider_list 
+{
+	margin-top: 0px;
+	margin-left: -15px;
+}
+
+#slider_list li
+{
+	list-style-type: none;
+	font-weight: Tahoma, sans-serif;
+	font-size: 0.7em;
+	color: #fff;
+	padding-top: 5px;
+}
+
+#slider_list li:before
+{
+	content: "» ";
+}
+
+#text_area
+{
+	height: 382px;
+}
+
+#menu_inf
+{
+	height: 34px;
+	background-color: #025d89;
+	border-bottom: 1px solid #fff;
+}
+
+#footer
+{
+	height: 74px;
+	background-color: #606060;
+}
