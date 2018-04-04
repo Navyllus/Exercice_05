@@ -1,4 +1,52 @@
 /* Exercice 05 */
+
+@font-face {
+  font-family: 'FontAwesomeBrands';
+  font-style: normal;
+  font-weight: normal;
+  src: url("font/fa-brands-400.eot");
+  src: url("fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+  url("font/fa-brands-400.woff2") format("woff2"), 
+  url("font/fa-brands-400.woff") format("woff"), 
+  url("font/fa-brands-400.ttf") format("truetype"), 
+  url("font/fa-brands-400.svg#fontawesome") format("svg"); 
+  }
+@font-face {
+  font-family: 'FontAwesomeRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("font/fa-regular-400.eot");
+  src: url("font/fa-regular-400.eot?#iefix") format("embedded-opentype"), 
+  url("font/fa-regular-400.woff2") format("woff2"), 
+  url("font/fa-regular-400.woff") format("woff"), 
+  url("font/fa-regular-400.ttf") format("truetype"), 
+  url("font/fa-regular-400.svg#fontawesome") format("svg"); 
+}
+@font-face {
+  font-family: 'Font AwesomeSolid';
+  font-style: normal;
+  font-weight: 900;
+  src: url("font/fa-solid-900.eot");
+  src: url("font/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+  url("font/fa-solid-900.woff2") format("woff2"), 
+  url("font/fa-solid-900.woff") format("woff"), 
+  url("font/fa-solid-900.ttf") format("truetype"), 
+  url("font/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.far,
+.fab,
+.fas {
+    display: inline-block;
+    font: normal normal normal 14px/1 'FontAwesomeBrands', 'FontAwesomeRegular','Font AwesomeSolid' ;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color:#595a5c;
+    font-size:13pt;
+    transition: all 0.5s ease-out;
+}
+  
 body
 {
 	margin: 0;
@@ -24,6 +72,73 @@ body
 {
 	height: 102px;
 	background-image: url(images/header.jpg);
+	color: #fff;
+}
+
+#header h1
+{
+	margin: 0;
+	font-family: Impact, sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	padding-top: 35px;
+	padding-left: 30px;
+
+}
+
+#header h5
+{
+	margin: 0;
+	font-family: Bebas, sans-serif;
+	font-size: 0.35em;
+	text-transform: uppercase;
+	padding-left: 30px;
+
+}
+
+#header #bloc1
+{
+	float: left;
+}
+
+.fa-home:before{
+    content: "\f015";
+	color: #fff;
+	font-size: 10px;
+}
+.fa-home:hover{
+	color: #000;
+}
+
+.fa-sitemap:before{
+    content: "\f0e8";
+	color: #fff;
+	font-size: 10px;
+	padding-left: 20px;
+}
+
+.fa-sitemap:hover{
+	color: #000;
+}
+
+#header #bloc2
+{
+	padding-top: 35px;
+	padding-left: 530px;
+}
+
+#header #bloc2 a
+{
+	text-decoration: none;
+	color: #fff;
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+	font-size: 0.5em;
+}
+
+#header #bloc2 a:hover
+{
+	color: #000;
 }
 
 #menu1
@@ -104,7 +219,7 @@ body
 #slider_list li
 {
 	list-style-type: none;
-	font-weight: Tahoma, sans-serif;
+	font-family: Tahoma, sans-serif;
 	font-size: 0.7em;
 	color: #fff;
 	padding-top: 5px;
